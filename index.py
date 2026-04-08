@@ -23,6 +23,17 @@ def get_csrf(session):
         pass
     return None
 
+@app.route('/')
+def home():
+    return jsonify({
+        "message": "BGMI API is Online",
+        "owner": "Api By @SajagOG",
+        "usage": "/Bgmi?ip=target&port=port&time=seconds"
+    })
+
+
+
+
 @app.route('/Bgmi', methods=['GET'])
 def bgmi_launch():
     # Parameters from the GET request
