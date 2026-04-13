@@ -1,4 +1,3 @@
-Flask
-requests
-faker
-beautifulsoup4
+flask
+httpx
+gunicorn
